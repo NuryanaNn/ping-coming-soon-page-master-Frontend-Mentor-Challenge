@@ -31,13 +31,14 @@ body{
 
 .header ul{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-top: 30px;
 }
 
 .header ul li{
     list-style: none;
+    margin-top: 10px;
 }
 
 .header ul li:nth-child(1) input{
@@ -52,7 +53,7 @@ body{
 .header ul li:nth-child(2){
     background: #7195f5;
     height: 40px;
-    width: 150px;
+    width: 300px;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -71,8 +72,8 @@ body{
 
 
 .body img{
-    height: 500px;
-    width: 800px;
+    height: 300px;
+    width: 300px;
 }
 
 /* Footer */
@@ -98,5 +99,29 @@ body{
     border-radius: 50%;
     color: #fff;
     transition: 1s;
+}
+
+@media(min-width:992px){
+    .header ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+
+    .header ul li:nth-child(2){
+        background: #7195f5;
+        height: 40px;
+        width: 150px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body img{
+        height: 500px;
+        width: 800px;
+    }
 }
 
